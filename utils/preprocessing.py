@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
 
 import cv2
 import numpy as np
@@ -213,11 +211,3 @@ input_dir = 'data/Cheddar_Wood_Ash_1'
 output_dir = 'Preprocess/Gray/Cheddar_Wood_Ash_11'
 
 process_images_in_folder(input_dir, output_dir, output_size=(300, 300), min_contour_area=5000)
-
-
-# In[ ]:
-
-
-
-
-
