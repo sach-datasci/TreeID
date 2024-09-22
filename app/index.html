@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload and Verification</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Image Upload & Verification</h1>
+            <p>Upload an image and verify its authenticity through our advanced AI system.</p>
+        </div>
+
+        <div class="content">
+            <!-- Upload Image Section -->
+            <div class="upload-container">
+                <h3>Upload Image</h3>
+                <input type="text" id="fileName" placeholder="Enter file name" required>
+                <input type="file" id="fileInput" accept="image/*" required>
+                <button class="btn primary-btn" onclick="uploadImage()">Upload</button>
+                <div class="spinner" id="uploadSpinner" style="display: none;"></div>
+                <!-- Response for Upload -->
+                <div class="response" id="uploadResponse"></div>
+            </div>
+
+            <!-- Verify Image Section -->
+            <div class="upload-container">
+                <h3>Verify Image</h3>
+                <input type="file" id="verifyInput" accept="image/*" required>
+                <button class="btn secondary-btn" onclick="verifyImage()">Verify</button>
+                <div class="spinner" id="verifySpinner" style="display: none;"></div>
+                <!-- Response for Verification -->
+                <div class="response" id="verifyResponse"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
